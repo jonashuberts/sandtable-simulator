@@ -29,6 +29,9 @@ def main():
 
         screen.fill(BACKGROUND_COLOR)
 
+        # Draw the circle background
+        draw_circle()
+
         # Read coordinates from current file
         path = read_coordinates(input_files[file_index])
 

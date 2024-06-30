@@ -12,6 +12,10 @@ pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("SandTable Simulator")
 
+# Function to draw the circle with CIRCLE_COLOR
+def draw_circle():
+    pygame.draw.circle(screen, CIRCLE_COLOR, (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2), SCREEN_WIDTH // 2)
+
 # Function to calculate RGB values based on polar coordinates
 def calculate_rgb(theta, rho):
     normalized_theta = (theta + math.pi) / (2 * math.pi)
@@ -43,7 +47,7 @@ def draw_path(path):
     if USE_RGB_PATH:
         draw_path_rgb(path)
     else:
-        draw_path_single_color(path, BALL_COLOR)
+        draw_path_single_color(path, "#FFE0B5")
 
 # Function to draw the path on screen with RGB color
 def draw_path_rgb(path):
