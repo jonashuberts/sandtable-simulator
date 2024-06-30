@@ -2,7 +2,7 @@
 
 SandTable Simulator is a Python-based application using pygame to simulate a sand table with customizable paths and ball animations.
 
-![SandTable Simulator](web.png)
+![SandTable Simulator](web.PNG)
 
 ## Features
 
